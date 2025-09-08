@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS public.pro (
   prousualt     int4 NULL,
   prodtalt      timestamp NULL,
   procor        int NULL,
+	proordem      int4 NULL,
   CONSTRAINT pk_pro PRIMARY KEY (procod),
   CONSTRAINT fk_pro_cor     FOREIGN KEY (procor)        REFERENCES public.cores(corcod),
   CONSTRAINT fk_pro_marcas  FOREIGN KEY (promarcascod)  REFERENCES public.marcas(marcascod),
