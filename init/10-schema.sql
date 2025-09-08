@@ -78,5 +78,7 @@ CREATE TABLE IF NOT EXISTS public.procor (
 CREATE TABLE IF NOT EXISTS public.emp (
   emprazao     varchar(254) NULL,
   empwhatsapp1 varchar(13) NULL,
-  empwhatsapp2 varchar(13) NULL
+  empwhatsapp2 varchar(13) NULL,
+  empdtpag date NULL,
+	empdtvenc date NULL
 );
