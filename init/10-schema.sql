@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS public.usu (
   usuemail varchar(120) NOT NULL,
   ususenha varchar(32) NULL,
   usuadm   bpchar(1) DEFAULT 'N',
-  CONSTRAINT pk_usu PRIMARY KEY (usucod, usuemail)
+  CONSTRAINT pk_usu PRIMARY KEY (usuemail)
 );
 
 -- ===== TABELA: marcas =====
@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS public.procor (
 
 -- ===== TABELA: emp (empresa) =====
 CREATE TABLE IF NOT EXISTS public.emp (
+  empcod serial4 NOT NULL,
   emprazao     varchar(254) NULL,
   empwhatsapp1 varchar(13) NULL,
   empwhatsapp2 varchar(13) NULL,
